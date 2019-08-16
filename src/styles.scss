@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #634567;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+
+  input {
+    display: flex;
+    padding: 10px;
+    border: 0;
+    border-radius: 3px;
+  }
+
+  button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+
+    background: lightgreen;
+    border: 0;
+    border-radius: 3px;
+
+    color: #666;
+    font-weight: bold;
+    font-size: 15px;
+
+    display: flex;
+    justify-content: center;
+
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+.content-favorite {
+  display: flex;
+  margin-top: 20px;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .favorite {
+    background: #fff;
+    border-radius: 3px;
+    width: 300px;
+    min-height: 300px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    li {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    strong {
+      font-size: 25px;
+      font-weight: bold;
+      color: black;
+      display: flex;
+    }
+
+    p {
+      display: flex;
+      min-height: 100px;
+      margin-top: 10px;
+    }
+
+    a {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      background: #634567;
+      padding: 10px;
+      width: 100%;
+
+      &:hover {
+        padding: 7px;
+        border: 3px solid #634567;
+        color: #634567;
+        background: #fff;
+      }
+    }
+
+    img {
+      width: 100px;
+      display: flex;
+    }
+  }
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #ff4040;
+  color: #fff;
+  margin-top: 20px;
+  padding: 10px;
+
+  font-weight: bold;
+  font-size: 30px;
+  border: 0;
+  border-radius: 3px;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #ff4040;
+  color: #fff;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 10px;
+
+  font-weight: bold;
+  font-size: 20px;
+  border: 0;
+  border-radius: 3px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  border: 0;
+  margin-top: 20px;
+
+  p {
+    padding: 10px;
+    color: #666;
+    font-weight: bold;
+    font-size: 40px;
+    background: lightgreen;
+    border-radius: 3px;
+  }
+}
